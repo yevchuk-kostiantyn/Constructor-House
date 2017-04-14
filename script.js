@@ -14,9 +14,9 @@
     }
 
     function calculate(form) {
+      // Calculate Price
       var house = form.elements;
 
-      // Calculate Price
       showMessage(house.area.parentNode);
       if (house.material.value == 'bricks') {
       	show(house.price.parentNode, house.area.value * 1200 + '$')
@@ -43,8 +43,4 @@
       	show(house.price.parentNode, 'Sorry, we do not build with this material')
       	document.getElementById("Build_button").disabled = true;
       }
-    }
-
-    // foam blocks
-    // wireframes
-    
+    }    
