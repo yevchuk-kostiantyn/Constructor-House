@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>House Builder</title>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div class="navigation">
+    <ul>
+      <li id="logo">Kostia's House Builder</li>
+    </ul>
+  </div>
+
+  <div id="cover">
+    <div class="cover-content">
+      <h1>Houses Built Just For You</h1>
+      <h2>Beautifully built houses for any style or type of person.</h2>
+      <a href="#Build" class="btn">Let's Start Building!</a>
+      <a href="#Latest" class="btn">Latest Houses</a>
+    <div>
+    <p><a name="Build"</a></p>
+    </div>
+    </div>
+
+  </div>
+  <div>
+  <p><a name="Build"</a></p>
+  </div>
+  <div class="products">
+  <p><a name="Build"</a></p>
+    <h3 class="blue">Build your own house</h3>
+    <div class="building">
+      <form>
+    <table>
+
+    <!--Color-->
+      <tr>
+        <td>Color</td>
+        <td>
+          <input name="color" type="text">
+        </td>
+      </tr>
+
+      <!--Area-->
+      <tr>
+        <td>Area</td>
+        <td>
+          <input name="area" type="number">
+        </td>
+      </tr>
+
+      <!--Material-->
+      <tr>
+        <td>Material</td>
+        <td>
+          <input name="material" type="text">
+        </td>
+      </tr>
+
+      <!--Price-->
+      <tr>
+      	<td>Price:</td>
+      	<td>	
+      		<output name="price"></output>
+      	</td>
+      </tr>
+    </table>
+
+
+    <input type="button" id='myBtn' class='btn' onclick="calculate(this.form)" value="Build">
+  </form>
+</div>
+</div>
+  <script>
+    function show(container, Message) {
+      container.className = 'message'; //error
+      var msgElem = document.createElement('span');
+      msgElem.className = "output-message";
+      msgElem.innerHTML = Message;
+      container.appendChild(msgElem);
+    }
+
+    function showMessage(container) { 
+      container.className = '';
+      if (container.lastChild.className == "output-message") {
+        container.removeChild(container.lastChild);
+      }
+    }
+
+    function calculate(form) {
+      var house = form.elements;
+
+      // Calculate Price
+      showMessage(house.area.parentNode);
+      if (house.material.value == 'bricks') {
+      	show(house.price.parentNode, house.area.value * 1500 + '$')
+      	document.getElementById("myBtn").disabled = true;
+      }
+      else if(house.material.value == 'wood') {
+      	show(house.price.parentNode, house.area.value * 1000 + '$')
+      	document.getElementById("myBtn").disabled = true;
+      }
+      else if(house.material.value == 'metal') {
+      	show(house.price.parentNode, house.area.value * 1200 + '$')
+      	document.getElementById("myBtn").disabled = true;
+      }
+      else {
+      	show(house.price.parentNode, 'Sorry, we do not build with this material')
+      	document.getElementById("myBtn").disabled = true;
+      }
+
+    }
+    
+  </script>
+
+    
+
+  <div class="products">
+  <div>
+    <p><a name="Latest"</a></p>
+    </div>
+    <h3 class="blue">Latest houses</h3>
+    <div class="building">
+      <img src="http://eskisehireskort.biz/wp-content/uploads/not-until-french-country-house-plans-authentic-french-country-house-plans-intended-for-french-country-home-plan-1024x682.jpg">
+      <h3>London, UK</h3>
+      <p>11 rooms, multiple windows. Perfect for the big happy family.</p>
+      
+    </div>
+
+    <div class="building">
+      <img src="https://cdn.houseplans.com/product/o2d2ui14afb1sov3cnslpummre/w1024.jpg?v=15"> 
+      <h3>Los Angeles, US</h3>
+      <p>Panoramic windows, huge garage. Excellent one.If you are bachelor ;)</p>
+    </div>
+
+  </div>
+  <h3>All our houses are built with love in Kharkiv, Ukraine</h3>
+  
+</body>
+</html> 
