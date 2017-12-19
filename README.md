@@ -18,5 +18,8 @@ To run the House Constructor program:
 1. `cd House-Conctructor`
 2. `open index.html file`
 
+To open the House Constructor program in Github pages:
+1. `open in the browser: https://yevchuk-kostiantyn.github.io/House-Constructor/`
+
 ## Contributors
 1. Kostiantyn Yevchuk: kostyantyn.yewchuk@gmail.com

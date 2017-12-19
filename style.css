@@ -5,7 +5,7 @@ body {
 }
 
 #cover {
-  background: url("https://static.pexels.com/photos/106399/pexels-photo-106399.jpeg") no-repeat center bottom;
+  background: url("img/background.jpeg") no-repeat center bottom;
   background-size: cover;
   background-attachment: fixed;
   height: 900px;
