@@ -10,6 +10,7 @@ House Constructor is finished.
 
 The program requires:
 1. Web Browser
+2. Git
 
 Grab the latest version of the program by running `git clone https://github.com/yevchuk-kostiantyn/House-Constructor.git`.
 
