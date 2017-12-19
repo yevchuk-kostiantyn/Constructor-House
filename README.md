@@ -1,6 +1,6 @@
 ## House Constructor
 
-Solar System is a prototype of the real Solar System.
+House Constructor is a prototype of the house builder. The project consists of the landing page and couple of features such as calculating the price of the house material, building, painting etc.
 
 ## Current Status
 
